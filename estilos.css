@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+body{
+    font-family: 'Montserrat';
+
+}
+
+div#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div#header {
+    display: flex;
+    background: black;
+    width: 100%;
+    height: 8.3rem;
+    justify-content: space-between;
+
+}
+
+div#header > nav#menu-hamburguesa {
+    display: flex;
+    align-self: center;
+
+}
+
+
+div#header > nav#menu-hamburguesa > ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+div#header > nav#menu-hamburguesa > ul > li {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+div#header > nav#menu-hamburguesa > ul > li > img {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+div#header > a#logo {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-self: center;
+    margin-left: 7.2rem;
+
+}
+
+div#header > a#logo > picture {
+    display: flex;
+
+}
+
+div#header > a#logo > picture > img {
+    height: 6.5rem;
+    align-self: center;
+
+}
+
+div#header > div#iconos-dere {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-right: 1.5rem;
+
+
+}
+
+div#header > div#iconos-dere > nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+div#header > div#iconos-dere > nav > ul {
+    list-style: none;
+    display: flex;
+
+}
+
+div#header > div#iconos-dere > nav > ul > li {
+    display: flex;
+
+}
+
+div#header > div#iconos-dere > nav > ul > li > a {
+    display: flex;
+
+}
+
+div#header > div#iconos-dere > nav > ul > li > a > img {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    align-self: center;
+
+}
+
+div#middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+div#middle > div#tablet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("Image/difuminado.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 93%;
+
+}
+
+div#middle > div#tablet-container > p:first-child {
+    margin-top: 5.4rem;
+    color: white;
+    font-size: 3rem;
+
+}
+
+div#middle > div#tablet-container > p:nth-child(3){
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 5rem;
+    color: white;
+    font-size: 2.5rem;
+    width: 53%;
+    text-align: center;
+
+}
+
+div#middle > div#tablet-container > p:nth-child(4){
+    display: flex;
+    flex-flow: wrap;
+    width: 70%;
+    text-align: center;
+    margin-top: 3rem;
+    color: #4F4F55;
+    font-size: 2.35rem;
+    font-weight: normal;
+
+}
+
+div#middle > div#tablet-container > div#carousel{
+    margin-top: 3rem;
+
+}
+
+div#middle > div#tablet-container > div#carousel > div > div > img {
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+div#middle > div#tablet-container > div#boton1 {
+    background: #7C7C81;
+    display: flex;
+    width: 64%;
+    height: 8rem;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
+div#middle > div#tablet-container > div#boton1 > a{
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: center;
+
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 49.736843 30"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="visa.svg"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)"
+   width="49.736843"
+   height="30">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>visa</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="7.24"
+     inkscape:cx="5.5939226"
+     inkscape:cy="15"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+  <title
+     id="title2">visa</title>
+  <desc
+     id="desc4" />
+  <g
+     id="Symbols"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       id="UI/Component/Desktop/Footer"
+       transform="translate(-1098,-402)">
+      <g
+         id="Payment"
+         transform="translate(1098,402)">
+        <g
+           id="Visa-light-Copy-2">
+          <rect
+             id="Rectangle"
+             x="0"
+             y="0"
+             width="49.736843"
+             height="30"
+             rx="2"
+             style="fill:#ffffff" />
+          <polyline
+             id="Fill-1"
+             points="20.5263158 19.7368421 22.0454318 10.2631579 24.4736842 10.2631579 22.9547071 19.7368421 20.5263158 19.7368421"
+             style="fill:#7f7f7f;fill-opacity:1" />
+          <path
+             d="m 29.420419,10.263158 c -2.28108,0 -3.886783,1.314667 -3.900111,3.197179 -0.01452,1.392497 1.145818,2.169079 2.020589,2.63191 0.899051,0.474419 1.20111,0.778013 1.197547,1.202214 -0.0062,0.648822 -0.717605,0.94612 -1.380973,0.94612 -0.923728,0 -1.414492,-0.14636 -2.173268,-0.50804 l -0.296781,-0.154229 -0.322645,2.168507 c 0.538006,0.26983 1.535368,0.504035 2.570471,0.516339 2.424258,0 3.999478,-1.298787 4.017953,-3.309059 0.0083,-1.104212 -0.606494,-1.94117 -1.937981,-2.632197 -0.806283,-0.449239 -1.301137,-0.746823 -1.295463,-1.201499 5.28e-4,-0.402598 0.418053,-0.833667 1.321723,-0.833667 0.754686,-0.01316 1.301005,0.175403 1.726711,0.372267 l 0.207179,0.110736 0.312484,-2.10012 c -0.456189,-0.194432 -1.173662,-0.406461 -2.067435,-0.406461 z"
+             id="Fill-2"
+             style="fill:#7f7f7f;fill-opacity:1"
+             inkscape:connector-curvature="0" />
+          <path
+             d="m 35.32296,16.372444 c 0.200401,-0.54489 0.963283,-2.649826 0.963283,-2.649826 -0.01411,0.02506 0.199295,-0.54909 0.321417,-0.904416 l 0.163198,0.817614 c 0,0 0.464008,2.26272 0.559576,2.736628 z m 2.983204,-6.109286 h -1.868756 c -0.579629,0 -1.013487,0.167723 -1.267412,0.785834 l -3.591049,8.68785 h 2.539805 c 0,0 0.414357,-1.16874 0.508403,-1.425225 0.277022,0 2.744908,0.0049 3.097167,0.0049 0.07247,0.330826 0.294448,1.420325 0.294448,1.420325 h 2.244388 z"
+             id="Fill-3"
+             style="fill:#7f7f7f;fill-opacity:1"
+             inkscape:connector-curvature="0" />
+          <path
+             d="m 18.707739,10.263158 -2.408871,6.46986 -0.258018,-1.315162 C 15.591958,13.90256 14.194607,12.260148 12.631579,11.43719 l 2.20378,8.299652 2.604672,-0.0015 3.875758,-9.472142 h -2.60805"
+             id="Fill-4"
+             style="fill:#7f7f7f;fill-opacity:1"
+             inkscape:connector-curvature="0" />
+          <path
+             d="M 13.700119,10.263158 H 9.5081772 l -0.034493,0.180465 C 12.735504,11.165095 14.893696,12.906585 15.789474,15 l -0.910943,-4.001992 c -0.157151,-0.551942 -0.613886,-0.715556 -1.178412,-0.73485"
+             id="Fill-5"
+             style="fill:#bfbfbf;fill-opacity:1"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
