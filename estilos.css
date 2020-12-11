@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 
-body{
+body {
     font-family: 'Montserrat';
 
 }
@@ -46,8 +46,8 @@ div#header > nav#menu-hamburguesa > ul > li {
 
 div#header > nav#menu-hamburguesa > ul > li > img {
     display: flex;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     cursor: pointer;
 }
 
@@ -136,18 +136,18 @@ div#middle > div#tablet-container > p:first-child {
 
 }
 
-div#middle > div#tablet-container > p:nth-child(3){
+div#middle > div#tablet-container > p:nth-child(3) {
     display: flex;
     flex-flow: wrap;
     margin-top: 5rem;
     color: white;
-    font-size: 2.5rem;
-    width: 53%;
+    font-size: 2.6rem;
+    width: 55%;
     text-align: center;
 
 }
 
-div#middle > div#tablet-container > p:nth-child(4){
+div#middle > div#tablet-container > p:nth-child(4) {
     display: flex;
     flex-flow: wrap;
     width: 70%;
@@ -159,9 +159,18 @@ div#middle > div#tablet-container > p:nth-child(4){
 
 }
 
-div#middle > div#tablet-container > div#carousel{
+div#middle > div#tablet-container > div#carousel {
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+div#middle > div#tablet-container > div#carousel > ul {
+
+    display: flex;
+    margin-top: 6rem;
 }
 
 div#middle > div#tablet-container > div#carousel > div > div > img {
@@ -177,11 +186,11 @@ div#middle > div#tablet-container > div#boton1 {
     height: 8rem;
     justify-content: center;
     margin-top: 4rem;
+    border-radius: .6rem;
 
 }
 
-div#middle > div#tablet-container > div#boton1 > a{
-
+div#middle > div#tablet-container > div#boton1 > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -191,7 +200,6 @@ div#middle > div#tablet-container > div#boton1 > a{
 }
 
 div#middle > div#categorias {
-
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -199,32 +207,47 @@ div#middle > div#categorias {
 
 }
 
-div#middle > div#categorias > div {
+div#middle > div#categorias > h3 {
+    color: #5F565A;
+    font-size: 4rem;
+    width: 95%;
+    margin-top: 9rem;
+    border-bottom: 0.31rem solid #5F565A;
+    border-radius: 0.25rem;
+}
 
+div#middle > div#categorias > div {
     display: flex;
     width: 100%;
     height: 25rem;
     margin-top: 5rem;
+    justify-content: center;
 
 }
 
-div#middle > div#categorias > div > div.imagen-categoria{
+div#middle > div#categorias > div:nth-child(2) {
 
+    margin-top: 3rem;
+
+}
+
+div#middle > div#categorias > div > div.imagen-categoria {
     position: relative;
-    width: 100%;
+    width: 95%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
-div#middle > div#categorias > div > div.imagen-categoria > img{
-
+div#middle > div#categorias > div > div.imagen-categoria > img {
     width: 100%;
     height: 100%;
+    border-radius: 1.1rem;
 
 }
 
-div#middle > div#categorias > div > div.boton{
-
+div#middle > div#categorias > div > div.boton {
     position: absolute;
     background: #7C7C81;
     display: flex;
@@ -233,11 +256,11 @@ div#middle > div#categorias > div > div.boton{
     height: 8rem;
     justify-content: center;
     margin-top: 15rem;
-    margin-left: 31rem;
+    margin-left: 28rem;
+    border-radius: .6rem;
 }
 
-div#middle > div#categorias> div > div.boton > a{
-
+div#middle > div#categorias > div > div.boton > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -246,3 +269,108 @@ div#middle > div#categorias> div > div.boton > a{
     text-align: center;
 
 }
+
+div#footer {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
+    width: 100%;
+
+}
+
+div#footer > div#informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+div#footer > div#informacion > h3 {
+    color: #5F565A;
+    font-size: 2.5rem;
+    width: 89%;
+    margin-top: 5rem;
+    border-bottom: 0.1rem solid #5F565A;
+    border-radius: 0.25rem;
+
+}
+
+div#footer > div#informacion > p {
+    display: flex;
+    flex-flow: wrap;
+    color: #5F565A;
+    font-size: 2rem;
+    width: 83%;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+
+}
+
+div#footer > div#informacion > div#boton7 {
+    background: #D12020;
+    display: flex;
+    width: 64%;
+    height: 8rem;
+    justify-content: center;
+    margin-top: 4rem;
+    border-radius: .6rem;
+
+}
+
+div#footer > div#informacion > div#boton7 > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: center;
+
+}
+
+div#footer > div#informacion > div#redes {
+    display: flex;
+    margin-top: 6rem;
+    width: 90%;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+
+}
+
+div#footer > div#informacion > div#redes > nav {
+    display: flex;
+
+}
+
+div#footer > div#informacion > div#redes > nav > ul {
+    list-style: none;
+    display: flex;
+
+}
+
+div#footer > div#informacion > div#redes > nav > ul > li {
+    display: flex;
+
+}
+
+div#footer > div#informacion > div#redes > nav > ul > li {
+    display: flex;
+
+}
+
+div#footer > div#informacion > div#redes > nav > ul > li > a{
+    display: flex;
+    text-decoration: none;
+
+}
+
+div#footer > div#informacion > div#redes > nav > ul > li > a > img{
+
+    width: 6rem;
+    height: 6rem;
+
+}z
+
+
+
