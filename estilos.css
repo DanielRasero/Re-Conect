@@ -31,6 +31,10 @@ div#header > nav#menu-hamburguesa {
 
 }
 
+div#header > nav#menu-hamburguesa > input {
+    display: none;
+
+}
 
 div#header > nav#menu-hamburguesa > ul {
     display: flex;
@@ -50,6 +54,82 @@ div#header > nav#menu-hamburguesa > ul > li > img {
     height: 4.5rem;
     cursor: pointer;
 }
+
+div#header > nav#menu-completo {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    background-color: #F0F0F0;
+    width: 30%;
+    top: 8.5rem;
+}
+
+div#header > nav#menu-completo > ul#menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li#fila-login{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    border-bottom: 0.1rem solid #5F565A;
+    margin-top: 1rem;
+    padding-bottom: 0.15rem;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li#fila-login > icon{
+    display: flex;
+    margin-right: 0.2rem;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li#fila-login > icon > img{
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li#fila-login > a{
+    color: #5F565A;
+    text-decoration: none;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li {
+    margin-top: 1rem;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li > a{
+    color: #5F565A;
+    text-decoration: none;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li > ul{
+    list-style: none;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li > ul > li{
+    margin-top: 0.2rem;
+
+}
+
+div#header > nav#menu-completo > ul#menu > li > ul > li > a{
+    color: #5F565A;
+    text-decoration: none;
+
+}
+
 
 div#header > a#logo {
     display: flex;
@@ -159,21 +239,14 @@ div#middle > div#tablet-container > p:nth-child(4) {
 
 }
 
-div#middle > div#tablet-container > div#carousel {
+div#middle > div#tablet-container > div#carousel-item {
     margin-top: 3rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
 }
 
-div#middle > div#tablet-container > div#carousel > ul {
-
-    display: flex;
-    margin-top: 6rem;
-}
-
-div#middle > div#tablet-container > div#carousel > div > div > img {
+div#middle > div#tablet-container > div#carousel-item > img {
     width: 40rem;
     height: 30rem;
     border-radius: 1rem;
@@ -359,18 +432,18 @@ div#footer > div#informacion > div#redes > nav > ul > li {
 
 }
 
-div#footer > div#informacion > div#redes > nav > ul > li > a{
+div#footer > div#informacion > div#redes > nav > ul > li > a {
     display: flex;
     text-decoration: none;
 
 }
 
-div#footer > div#informacion > div#redes > nav > ul > li > a > img{
+div#footer > div#informacion > div#redes > nav > ul > li > a > img {
 
     width: 6rem;
     height: 6rem;
 
-}z
+}
 
 
 
