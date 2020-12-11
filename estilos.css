@@ -32,50 +32,67 @@ div#header > nav#menu-hamburguesa {
 }
 
 div#header > nav#menu-hamburguesa > input {
-    display: none;
+  display: none;
 
 }
 
-div#header > nav#menu-hamburguesa > ul {
+div#header > nav#menu-hamburguesa > label {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+
+}
+
+div#header > nav#menu-hamburguesa > label > ul {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-div#header > nav#menu-hamburguesa > ul > li {
+div#header > nav#menu-hamburguesa > label > ul > li {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-div#header > nav#menu-hamburguesa > ul > li > img {
+div#header > nav#menu-hamburguesa > label > ul > li > img {
     display: flex;
     width: 4.5rem;
     height: 4.5rem;
     cursor: pointer;
+
 }
 
-div#header > nav#menu-completo {
+div#header > nav#menu-hamburguesa > nav#menu-completo {
     display: flex;
     position: absolute;
     justify-content: left;
     background-color: #F0F0F0;
     width: 30%;
     top: 8.5rem;
+    left: -19rem;
+    transition: all 1s;
 }
 
-div#header > nav#menu-completo > ul#menu {
+div#header > nav#menu-hamburguesa > input#hamburguer-icon:checked ~ nav#menu-completo{
+    left: 0rem;
+}
+
+
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: flex-start;
     width: 100%;
     margin-top: 1rem;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li#fila-login{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login{
     display: flex;
+    flex-direction: row;
     width: 90%;
     justify-content: space-around;
     border-bottom: 0.1rem solid #5F565A;
@@ -84,47 +101,60 @@ div#header > nav#menu-completo > ul#menu > li#fila-login{
 
 }
 
-div#header > nav#menu-completo > ul#menu > li#fila-login > icon{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon{
     display: flex;
     margin-right: 0.2rem;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li#fila-login > icon > img{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon > img{
     display: flex;
     width: 1.5rem;
     height: 1.5rem;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li#fila-login > a{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > a{
     color: #5F565A;
     text-decoration: none;
+    border: none;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li {
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li {
     margin-top: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
-div#header > nav#menu-completo > ul#menu > li > a{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > a{
     color: #5F565A;
     text-decoration: none;
+    border-bottom: 0.1rem solid #5F565A;
+    padding-bottom: 0.15rem;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li > ul{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li > ul > li{
-    margin-top: 0.2rem;
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div{
+    display: flex;
+    margin-top: 0.3rem;
+    margin-right: 5rem;
+    width: 100%;
 
 }
 
-div#header > nav#menu-completo > ul#menu > li > ul > li > a{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div > a{
     color: #5F565A;
     text-decoration: none;
 
@@ -366,7 +396,7 @@ div#footer > div#informacion > h3 {
     font-size: 2.5rem;
     width: 89%;
     margin-top: 5rem;
-    border-bottom: 0.1rem solid #5F565A;
+    border-bottom: 0.2rem solid #5F565A;
     border-radius: 0.25rem;
 
 }
@@ -445,5 +475,21 @@ div#footer > div#informacion > div#redes > nav > ul > li > a > img {
 
 }
 
+/** Pestaña de Winsor-General **/
 
+div#middle > div#categorias-winsor >  {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+div#middle > div#categorias-winsor > h3 {
+    color: #5F565A;
+    font-size: 4rem;
+    width: 95%;
+    margin-top: 9rem;
+    border-bottom: 0.31rem solid #5F565A;
+    border-radius: 0.25rem;
+}
