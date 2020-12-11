@@ -189,3 +189,60 @@ div#middle > div#tablet-container > div#boton1 > a{
     align-self: center;
 
 }
+
+div#middle > div#categorias {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div#middle > div#categorias > div {
+
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    margin-top: 5rem;
+
+}
+
+div#middle > div#categorias > div > div.imagen-categoria{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+div#middle > div#categorias > div > div.imagen-categoria > img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+div#middle > div#categorias > div > div.boton{
+
+    position: absolute;
+    background: #7C7C81;
+    display: flex;
+    flex-flow: wrap;
+    width: 44%;
+    height: 8rem;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-left: 31rem;
+}
+
+div#middle > div#categorias> div > div.boton > a{
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+
+}
