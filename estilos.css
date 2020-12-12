@@ -32,7 +32,7 @@ div#header > nav#menu-hamburguesa {
 }
 
 div#header > nav#menu-hamburguesa > input {
-  display: none;
+    display: none;
 
 }
 
@@ -75,7 +75,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo {
     transition: all 1s;
 }
 
-div#header > nav#menu-hamburguesa > input#hamburguer-icon:checked ~ nav#menu-completo{
+div#header > nav#menu-hamburguesa > input#hamburguer-icon:checked ~ nav#menu-completo {
     left: 0rem;
 }
 
@@ -90,7 +90,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu {
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -101,20 +101,20 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login{
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon {
     display: flex;
     margin-right: 0.2rem;
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon > img{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon > img {
     display: flex;
     width: 1.5rem;
     height: 1.5rem;
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > a{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > a {
     color: #5F565A;
     text-decoration: none;
     border: none;
@@ -130,7 +130,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li {
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > a{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > a {
     color: #5F565A;
     text-decoration: none;
     border-bottom: 0.1rem solid #5F565A;
@@ -138,7 +138,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > a{
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -146,7 +146,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul{
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div {
     display: flex;
     margin-top: 0.3rem;
     margin-right: 5rem;
@@ -154,7 +154,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div{
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div > a{
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div > a {
     color: #5F565A;
     text-decoration: none;
 
@@ -469,7 +469,6 @@ div#footer > div#informacion > div#redes > nav > ul > li > a {
 }
 
 div#footer > div#informacion > div#redes > nav > ul > li > a > img {
-
     width: 6rem;
     height: 6rem;
 
@@ -477,7 +476,7 @@ div#footer > div#informacion > div#redes > nav > ul > li > a > img {
 
 /** Pestaña de Winsor-General **/
 
-div#middle > div#categorias-winsor >  {
+div#middle > div#categorias-winsor {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -485,11 +484,39 @@ div#middle > div#categorias-winsor >  {
 
 }
 
-div#middle > div#categorias-winsor > h3 {
-    color: #5F565A;
-    font-size: 4rem;
-    width: 95%;
-    margin-top: 9rem;
-    border-bottom: 0.31rem solid #5F565A;
+div#middle > div#categorias-winsor > div#img-cabecera {
+    width: 90%;
+    margin-top: 4rem;
+    border-bottom: 0.31rem solid black;
     border-radius: 0.25rem;
+    background: none;
+}
+
+div#middle > div#categorias-winsor > div#img-cabecera > img {
+    width: 35%;
+    height: 35%;
+
+}
+
+div#middle > div#categorias-winsor > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 3rem;
+    height: 40%;
+    background: #6F6F6F;
+    border-radius: 0.3rem;
+
+}
+
+div#middle > div#categorias-winsor > div > img {
+    width: 100%;
+
+}
+
+div#middle > div#categorias-winsor > div > p {
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 0.7rem;
+
 }
