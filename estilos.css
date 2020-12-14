@@ -603,23 +603,147 @@ div#middle > div#productos > div.producto-tienda > a {
 
 }
 
-div#middle > div#productos > div.producto-tienda > a > img{
+div#middle > div#productos > div.producto-tienda > a > img {
     display: flex;
     width: 100%;
 
 }
 
-div#middle > div#productos > div.producto-tienda > p{
+div#middle > div#productos > div.producto-tienda > p {
     color: white;
     font-size: 1.3rem;
     margin-left: 1rem;
 
 }
 
-div#middle > div#productos > div.producto-tienda > p:last-child{
+div#middle > div#productos > div.producto-tienda > p:last-child {
     color: white;
     font-size: 1.4rem;
     margin-left: 1rem;
     font-weight: bold;
+
+}
+
+/** Para el login **/
+
+div#middle.medio-alternativo{
+
+    height: 74rem;
+}
+
+div#middle > h2#title-login {
+    width: 90%;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    border-bottom: 0.31rem solid black;
+    border-radius: 0.25rem;
+
+}
+
+div#middle > div#form-login {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+
+}
+
+div#middle > div#form-login > label {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: #5F565A;
+    border-bottom: 0.31rem solid #5F565A;
+    border-radius: 0.25rem;
+    align-self: flex-start;
+
+}
+
+div#middle > div#form-login > input {
+    width: 90%;
+    height: 4rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+    display: flex;
+    border-radius: 1rem;
+}
+
+div#middle > div#form-login > input::placeholder {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+}
+
+div#middle > div#botonLogin {
+    display: flex;
+    justify-content: center;
+    width: 34%;
+    height: 6rem;
+    margin-top: 4rem;
+    border-radius: .6rem;
+    background: #7C7C81;
+    align-self: flex-start;
+    margin-left: 3rem;
+
+}
+
+div#middle > div#botonLogin > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: center;
+
+}
+
+div#footer.alternativo {
+    align-self: flex-end;
+}
+
+div#footer > div#alt-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 7rem;
+
+}
+
+div#footer > div#alt-footer > p {
+    color: #5F565A;
+    font-size: 2rem;
+    align-self: center;
+
+}
+
+div#footer > div#alt-footer > a {
+    text-decoration: none;
+    color: #5F565A;
+    font-size: 2.2rem;
+    align-self: center;
+
+}
+
+/** Página de contacto **/
+
+div#middle > div#infocontact{
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: flex-start;
+}
+
+div#middle > div#infocontact > p {
+    color: #7C7C81;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+
+}
+
+div#middle > h2 {
+    width: 90%;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    border-bottom: 0.31rem solid black;
+    border-radius: 0.25rem;
 
 }
