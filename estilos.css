@@ -31,10 +31,7 @@ div#header > nav#menu-hamburguesa {
 
 }
 
-div#header > nav#menu-hamburguesa > input {
-    display: none;
 
-}
 
 div#header > nav#menu-hamburguesa > label {
     display: flex;
@@ -73,10 +70,6 @@ div#header > nav#menu-hamburguesa > nav#menu-completo {
     top: 8.5rem;
     left: -19rem;
     transition: all 1s;
-}
-
-div#header > nav#menu-hamburguesa > input#hamburguer-icon:checked ~ nav#menu-completo {
-    left: 0rem;
 }
 
 
