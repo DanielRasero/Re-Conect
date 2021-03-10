@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
 * {
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 
 body {
     font-family: 'Montserrat';
 
 }
 
+
 div#container {
+
     display: flex;
+   box-sizing: border-box;
     flex-direction: column;
     align-items: center;
+
 
 }
 
@@ -28,12 +32,15 @@ div#header {
 div#header > nav#menu-hamburguesa {
     display: flex;
     align-self: center;
+    z-index:500;
+}
+
+div#header > nav#menu-hamburguesa > nav#lupa-izq {
+    display: none;
 
 }
 
-
-
-div#header > nav#menu-hamburguesa > label {
+div#header > nav#menu-hamburguesa > div#container-hamburguer-icon {
     display: flex;
     width: 100%;
     height: 100%;
@@ -41,19 +48,19 @@ div#header > nav#menu-hamburguesa > label {
 
 }
 
-div#header > nav#menu-hamburguesa > label > ul {
+div#header > nav#menu-hamburguesa > div#container-hamburguer-icon > ul {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-div#header > nav#menu-hamburguesa > label > ul > li {
+div#header > nav#menu-hamburguesa > div#container-hamburguer-icon > ul > li {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-div#header > nav#menu-hamburguesa > label > ul > li > img {
+div#header > nav#menu-hamburguesa > div#container-hamburguer-icon > ul > li > img {
     display: flex;
     width: 4.5rem;
     height: 4.5rem;
@@ -66,9 +73,10 @@ div#header > nav#menu-hamburguesa > nav#menu-completo {
     position: absolute;
     justify-content: left;
     background-color: #F0F0F0;
-    width: 30%;
+    width: 50%;
+    height: 100%;
     top: 8.5rem;
-    left: -19rem;
+    left: -80rem;
     transition: all 1s;
 }
 
@@ -94,13 +102,13 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login 
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon {
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > div {
     display: flex;
     margin-right: 0.2rem;
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > icon > img {
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login > div > img {
     display: flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -117,6 +125,7 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li#fila-login 
 div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li {
     margin-top: 1rem;
     width: 50%;
+
     display: flex;
     flex-direction: column;
 
@@ -133,26 +142,31 @@ div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > a {
 
 div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div {
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > li {
     display: flex;
-    margin-top: 0.3rem;
+    margin-top: 0.6rem;
     margin-right: 5rem;
     width: 100%;
 
 }
 
-div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > div > a {
-    color: #5F565A;
+div#header > nav#menu-hamburguesa > nav#menu-completo > ul#menu > li > ul > li > a {
+    display: flex;
     text-decoration: none;
+    color: #5F565A;
+    width: 100%;
 
 }
 
+div#header > nav#menu-escritorio {
+    display: none;
+}
 
 div#header > a#logo {
     display: flex;
@@ -174,6 +188,8 @@ div#header > a#logo > picture > img {
 
 }
 
+
+
 div#header > div#iconos-dere {
     display: flex;
     justify-content: space-between;
@@ -186,6 +202,17 @@ div#header > div#iconos-dere {
 div#header > div#iconos-dere > nav {
     display: flex;
     justify-content: center;
+
+}
+
+div#header > div#iconos-dere > nav#lupa > input#input-lupa{
+
+    display: none;
+
+}
+
+div#header > div#iconos-dere > nav#usuario-dere {
+    display: none;
 
 }
 
@@ -213,12 +240,18 @@ div#header > div#iconos-dere > nav > ul > li > a > img {
 
 }
 
+
 div#middle {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+div#middle > div#winsor-escritorio{
+
+    display: none;
 }
 
 div#middle > div#tablet-container {
@@ -295,6 +328,12 @@ div#middle > div#tablet-container > div#boton1 > a {
 
 }
 
+div#middle> div#video-escritorio{
+
+  display: none;
+
+}
+
 div#middle > div#categorias {
     display: flex;
     width: 100%;
@@ -321,6 +360,7 @@ div#middle > div#categorias > div {
 
 }
 
+
 div#middle > div#categorias > div:nth-child(2) {
 
     margin-top: 3rem;
@@ -328,7 +368,7 @@ div#middle > div#categorias > div:nth-child(2) {
 }
 
 div#middle > div#categorias > div > div.imagen-categoria {
-    position: relative;
+
     width: 95%;
     height: 100%;
     display: flex;
@@ -349,10 +389,10 @@ div#middle > div#categorias > div > div.boton {
     display: flex;
     flex-flow: wrap;
     width: 44%;
-    height: 8rem;
+    height: 6rem;
     justify-content: center;
     margin-top: 15rem;
-    margin-left: 28rem;
+    margin-left: 20rem;
     border-radius: .6rem;
 }
 
@@ -360,7 +400,7 @@ div#middle > div#categorias > div > div.boton > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
     align-self: center;
     text-align: center;
 
@@ -425,6 +465,26 @@ div#footer > div#informacion > div#boton7 > a {
 
 }
 
+div#footer > div#email-updates-tablet{
+
+    display: none;
+}
+
+div#footer > div#follow-us-tablet{
+
+    display: none;
+}
+
+div#footer > div#customer-service-tablet{
+
+    display: none;
+}
+
+div#footer > div#legal-tablet{
+
+    display: none;
+}
+
 div#footer > div#informacion > div#redes {
     display: flex;
     margin-top: 6rem;
@@ -467,7 +527,125 @@ div#footer > div#informacion > div#redes > nav > ul > li > a > img {
 
 }
 
-/** Pestaña de Winsor-General **/
+/*Boton para volver arriba*/
+div#boton-volver{
+    color:#454545;
+    width: 8rem;
+    background-color: #D12020;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    opacity: 0.7;
+    color: white;
+    border-radius: 0.7rem;
+    display:none;
+}
+
+
+/*Pestaña bolsa*/
+
+
+div#middle > div#productos-bolsa{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    order: 1;
+
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa{
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 50%;
+    order: 1;
+
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa >div.contenedor-imagen-bolsa{
+    width: 100%;
+    height: 80%;
+
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa >div.contenedor-imagen-bolsa> img{
+    width: 100%;
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa > div.descripcion-producto-bolsa{
+
+    width: 100%;
+   background-color: #6F6F6F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa > div.descripcion-producto-bolsa> p{
+    color: white;
+    font-size: 1.3rem;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa > div.descripcion-producto-bolsa> div{
+
+    display: flex;
+
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa > div.descripcion-producto-bolsa> div > label{
+
+    font-size: 1rem;
+    color: white;
+    margin-left: 1.5rem;
+
+}
+
+div#middle > div#productos-bolsa> div.producto-bolsa > div.descripcion-producto-bolsa> div > input{
+
+    border-radius: 0.5rem;
+    width: 25%;
+    margin-left: 1.5rem;
+
+}
+
+div#middle > div.boton-comprar{
+
+    display: flex;
+    background-color: #D12020 ;
+    justify-content: center;
+    width: 45%;
+    height: 4rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    order: 0;
+}
+
+div#middle > div.boton-comprar > p{
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    align-self: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+
+    /** Pestaña de Winsor-General **/
 
 div#middle > div#categorias-winsor {
     display: flex;
@@ -514,6 +692,8 @@ div#middle > div#categorias-winsor > div > p {
 
 }
 
+
+
 /** Páginas de Categorías **/
 
 div#middle > div#marcas {
@@ -540,13 +720,7 @@ div#middle > div#marcas > div.marca-tienda {
 
 }
 
-div#middle > div#marcas > div.marca-tienda:nth-child(2) {
-    display: flex;
-    width: 30%;
-    height: 30%;
-    margin-top: 4rem;
 
-}
 
 div#middle > div#marcas > div.marca-tienda > a {
     text-decoration: none;
@@ -666,6 +840,14 @@ div#middle > div#form-login > input::placeholder {
 
 }
 
+div#middle > div#form-login > p.mensaje-error{
+    display: none;
+    color: red;
+    margin-top: 1rem;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
 div#middle > div#botonLogin {
     display: flex;
     justify-content: center;
@@ -740,3 +922,857 @@ div#middle > h2 {
     border-radius: 0.25rem;
 
 }
+
+/*SLIDER*/
+
+.contenedor-slider {
+    width: 640px;
+    margin: 40px auto 0;
+}
+
+.slider-wrapper {
+
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: #FFF;
+    border: 5px solid #4b5973;
+    overflow: hidden;
+}
+
+.slider-wrapper li {
+    display: none;
+}
+
+.slider-wrapper .current-slide {
+    display: block;
+}
+
+.slider-shadow {
+    width: 100%;
+    height: 15px;
+    position: relative;
+}
+
+.slider-shadow:after, .slider-shadow:before {
+    content: '';
+    position: absolute;
+    background: #171c24;
+    height: 100%;
+    width: 50%;
+    left: 10px;
+    top: 0;
+    -webkit-box-shadow: 0 0 15px 8px #171c24;
+    box-shadow: 0 0 15px 8px #171c24;
+}
+
+.slider-shadow:before {
+    right: 10px;
+
+    left: auto;
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.slider-wrapper img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+
+/*VERSIÓN DE TABLET*/
+@media screen and (min-width:750px) {
+
+
+    div#header {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    div#header > nav#menu-hamburguesa > nav#menu-completo{
+
+        width: 40%;
+    }
+
+    div#header > a#logo{}
+
+    div#header > div#iconos-dere > nav#lupa {
+        display: none;
+    }
+
+
+    div#header > nav#menu-hamburguesa >  nav#lupa-izq {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav#lupa-izq > ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav#lupa-izq > ul > li {
+        display: flex;
+    }
+
+    nav#lupa-izq > ul > li > a{
+        display: flex;
+    }
+
+    nav#lupa-izq > ul > li > a > img {
+        display: flex;
+        width: 3.5rem;
+        height: 3.5rem;
+        align-self: center;
+
+    }
+
+    div#header > div#iconos-dere > nav#usuario-dere {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    div#middle> div#video-escritorio{
+
+        display: none;
+
+    }
+
+    div#middle > div#categorias {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+
+    div#middle > div#categorias > div {
+        display: flex;
+        width: 45%;
+        height: 25rem;
+        margin-top: 5rem;
+        justify-content: center;
+
+    }
+
+    div#middle > div#categorias > div:nth-child(2) {
+
+        margin-top: 5rem;
+
+    }
+
+    div#middle > div#categorias > div > div.imagen-categoria {
+
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    div#middle > div#categorias > div > div.imagen-categoria > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1.1rem;
+
+    }
+
+    div#middle > div#categorias > div > div.boton {
+        position: absolute;
+        background: #7C7C81;
+        display: flex;
+        flex-flow: wrap;
+        width: 30%;
+        height: 6rem;
+        justify-content: center;
+        margin-top: 16rem;
+        margin-left: 1rem;
+        border-radius: .6rem;
+    }
+
+    div#middle > div#categorias > div > div.boton > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        align-self: center;
+        text-align: center;
+
+    }
+
+    div#footer {
+        margin-top: 4rem;
+        display: flex;
+        flex-flow: wrap;
+        background-color: #F0F0F0;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+
+    div#footer > div#email-updates-tablet {
+        display: flex;
+        flex-flow: wrap;
+        width: 90%;
+        justify-content: space-around;
+
+    }
+
+    div#footer > div#email-updates-tablet > h3 {
+        color: #5F565A;
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 5rem;
+        border-bottom: 0.2rem solid #5F565A;
+        border-radius: 0.1rem;
+
+    }
+
+    div#footer > div#email-updates-tablet > p {
+        width: 50%;
+        font-size: 1.05rem;
+        margin-top: 1rem;
+
+    }
+
+    div#footer > div#email-updates-tablet > div#boton-singup-tablet {
+        background: #D12020;
+        display: flex;
+        margin-top: 1rem;
+        width: 40%;
+        height: 4rem;
+        justify-content: center;
+        border-radius: .6rem;
+
+    }
+
+    div#footer > div#email-updates-tablet > div#boton-singup-tablet > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        align-self: center;
+
+    }
+
+
+    div#footer > div#informacion{
+
+        display: none;
+    }
+
+    div#footer > div#follow-us-tablet{
+
+        display: flex;
+        flex-flow: wrap;
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    div#footer > div#follow-us-tablet > h3 {
+        color: #5F565A;
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 5.5rem;
+        border-bottom: 0.2rem solid #5F565A;
+        border-radius: 0.1rem;
+
+    }
+
+    div#footer > div#follow-us-tablet > p {
+        width: 50%;
+        font-size: 1.05rem;
+        margin-top: 1rem;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet {
+        display: flex;
+        margin-top: 1rem;
+        margin-right: 3rem;
+        width: 40%;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet > nav {
+        display: flex;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet > nav > ul {
+        list-style: none;
+        display: flex;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet > nav > ul > li {
+        display: flex;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet > nav > ul > li {
+        display: flex;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet > nav > ul > li > a {
+        display: flex;
+        text-decoration: none;
+
+    }
+
+    div#footer >div#follow-us-tablet > div#redes-tablet > nav > ul > li > a > img {
+        width: 3rem;
+        height: 3rem;
+
+    }
+
+    div#footer > div#customer-service-tablet{
+
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    div#footer > div#customer-service-tablet > h3 {
+        color: #5F565A;
+        font-size: 1.5rem;
+        width: 100%;
+        border-bottom: 0.2rem solid #5F565A;
+        border-radius: 0.1rem;
+    }
+
+    div#footer > div#legal-tablet{
+
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    div#footer > div#legal-tablet > h3 {
+        color: #5F565A;
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 2rem;
+        border-bottom: 0.2rem solid #5F565A;
+        border-radius: 0.1rem;
+
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    div#header > nav#menu-hamburguesa{
+
+        display: none;
+    }
+
+    div#header > nav#menu-escritorio{
+
+        display: flex;
+        align-self: center;
+        width: 25%;
+        margin-left: 1rem;
+
+
+    }
+
+    div#header > nav#menu-escritorio > ul#lista-menu-escritorio{
+
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+    }
+
+    div#header >  nav#menu-escritorio > ul#lista-menu-escritorio > li:first-child{
+        margin-left: 0;
+
+    }
+
+
+
+    div#header >  nav#menu-escritorio > ul#lista-menu-escritorio > li{
+
+        display: flex;
+        justify-content: center;
+        margin-left: 1.3rem;
+        align-self: center;
+
+    }
+
+    div#header >  nav#menu-escritorio > ul#lista-menu-escritorio > li > a{
+
+        display: flex;
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+
+    div#header > a#logo {
+        height: 100%;
+      display: flex;
+        justify-content: center;
+
+
+
+    }
+
+    div#header > div#iconos-dere {
+
+
+        margin-right: 1rem;
+
+    }
+
+    div#header > div#iconos-dere > nav#lupa{
+
+        display: flex;
+
+    }
+
+    div#header > div#iconos-dere > nav#lupa > input#input-lupa{
+
+        display: flex;
+        height:2rem;
+        align-self: center;
+        background: black;
+        border: 1px solid white;
+        border-radius: 0.3rem;
+
+    }
+
+
+    div#header > div#iconos-dere > nav#lupa > input#input-lupa::placeholder{
+
+        color: white;
+
+    }
+
+    div#header > div#iconos-dere > nav > ul > li > a > img {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        align-self: center;
+
+    }
+
+    div#middle > div#tablet-container{
+        display: none;
+    }
+
+    div#middle > div#winsor-escritorio{
+        display: flex;
+        width: 100%;
+        height: 30%;
+        background-image: url("Image/winsor-portada-gigante.jpg");
+        background-repeat: no-repeat;
+
+
+    }
+
+    div#middle > div#winsor-escritorio > div#parrafo-winsor{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin-top: 10rem;
+        margin-left: 6rem;
+        padding-bottom: 12rem;
+    }
+
+    div#middle > div#winsor-escritorio > div#parrafo-winsor > h3{
+
+        color: #363030;
+        width: 100%;
+
+    }
+
+    div#middle > div#winsor-escritorio > div#parrafo-winsor > p{
+
+        margin-top: 1rem;
+        color: #363030;
+        width: 90%;
+        font-size: 1.5rem;
+
+    }
+
+    div#middle > div#winsor-escritorio > div#parrafo-winsor >  div#boton-winsor-escritorio{
+
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 6rem;
+        background-color: #08C4B1;
+        border-radius: 0.3rem;
+
+    }
+
+    div#middle > div#winsor-escritorio > div#parrafo-winsor >div#boton-winsor-escritorio > a{
+
+        text-decoration: none;
+        align-self: center;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        width: 90%;
+
+    }
+
+    div#middle > div#categorias{
+
+        display: none;
+    }
+
+
+    div#middle> div#video-escritorio{
+
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    div#middle > div#video-escritorio > div#texto-video{
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 5.5rem;
+        margin-left: 2rem;
+        width: 40%;
+    }
+
+
+    div#middle > div#video-escritorio > div#texto-video >h4{
+
+        color: #08C4B1;
+
+    }
+
+    div#middle > div#video-escritorio > div#texto-video >h2{
+
+        margin-top: 2rem;
+
+    }
+
+    div#middle > div#video-escritorio > div#texto-video >p{
+
+        margin-top: 2rem;
+        font-size: 1.2rem;
+
+    }
+
+
+
+
+    div#middle > div#video-escritorio > div#texto-video >  div{
+
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 5rem;
+        background-color: #08C4B1;
+        border-radius: 0.3rem;
+        margin-top: 1.5rem;
+        align-self: flex-start;
+
+    }
+
+    div#middle > div#video-escritorio > div#texto-video >  div > a{
+
+        text-decoration: none;
+        align-self: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    div#middle > div#video-escritorio > div#video-suport{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    div#middle > div#video-escritorio > div#video-suport > video{
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    div#middle > div#video-escritorio > div#video-suport > div#control {
+
+
+        display: flex;
+        width: 100%;
+        height: 15%;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 1rem;
+        border: 1px solid black
+
+    }
+
+    div#middle > div#video-escritorio > div#video-suport > div#control > div{
+
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    div#middle > div#video-escritorio > div#video-suport > div#control > div > img{
+
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+
+    div#footer{
+        margin-top: 10rem;
+        height: 10%;
+    }
+
+    div#footer > div#email-updates-tablet{
+
+        width: 40%;
+    }
+
+    div#footer > div#email-updates-tablet > h3 {
+
+        margin-top: 1rem;
+
+
+    }
+
+    div#footer > div#follow-us-tablet {
+
+        width: 40%;
+    }
+
+    div#footer > div#follow-us-tablet> p{
+
+        width: 100%;
+
+    }
+
+    div#footer > div#follow-us-tablet > div#redes-tablet {
+
+        margin-right: 4rem;
+        width: 40%;
+
+    }
+
+
+    /*paginas de marcas*/
+
+    div#middle > div#marcas {
+        display: flex;
+        width: 95%;
+
+        justify-content: space-around;
+
+    }
+
+    div#middle > div#marcas > h3 {
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 4rem;
+        border-bottom: 0.31rem solid black;
+        border-radius: 0.25rem;
+
+    }
+
+    div#middle > div#marcas > div.marca-tienda {
+        display: flex;
+        width: 20rem;
+        margin-top: 4rem;
+        align-self: center;
+        justify-content: center;
+
+
+    }
+
+
+
+    div#middle > div#marcas > div.marca-tienda > a {
+        text-decoration: none;
+        display: flex;
+        width: 15rem;
+
+    }
+
+    div#middle > div#marcas > div.marca-tienda > a > img {
+        width: 100%;
+
+    }
+
+
+    /** Página de Productos **/
+
+    div#middle > div#productos {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: space-around;
+
+    }
+
+    div#middle > div#productos > h3 {
+        width: 95%;
+        font-size: 2.5rem;
+        margin-top: 4rem;
+        border-bottom: 0.31rem solid black;
+        border-radius: 0.25rem;
+
+    }
+
+    div#middle > div#productos > div.producto-tienda {
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+        margin-top: 4rem;
+        background: #6F6F6F;
+        border-radius: 0.3rem;
+
+    }
+
+
+    div#middle > div#productos > div.producto-tienda > a {
+        display: flex;
+        width: 100%;
+        height: 80%;
+
+    }
+
+    div#middle > div#productos > div.producto-tienda > a > img {
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    div#middle > div#productos > div.producto-tienda > p {
+        color: white;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+
+    }
+
+    div#middle > div#productos > div.producto-tienda > p:last-child {
+        color: white;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        font-weight: bold;
+
+    }
+
+    /*Página de winsor*/
+
+    div#middle > div#categorias-winsor {
+        display: flex;
+        flex-flow: wrap;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    div#middle > div#categorias-winsor > div#img-cabecera > img {
+        width: 20%;
+        height: 20%;
+
+    }
+
+    div#middle > div#categorias-winsor > div {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin-top: 3rem;
+        height: 40%;
+        background: #6F6F6F;
+        border-radius: 0.3rem;
+
+    }
+
+
+    /*Pestaña bolsa*/
+
+
+    div#middle > div#productos-bolsa{
+
+        display: flex;
+        flex-flow: wrap;
+        width: 55%;
+        justify-content: space-around;
+        order: 0;
+    }
+
+    div#middle > div#productos-bolsa> div.producto-bolsa{
+
+        width: 30%;
+
+    }
+
+    div#middle > div#productos-bolsa> div.producto-bolsa >div.contenedor-imagen-bolsa{
+        width: 100%;
+        height: 80%;
+
+    }
+
+    div#middle > div#productos-bolsa> div.producto-bolsa >div.contenedor-imagen-bolsa> img{
+        width: 100%;
+    }
+
+
+
+
+    div#middle > div.boton-comprar{
+
+        display: flex;
+        background-color: #D12020 ;
+        justify-content: center;
+        width: 25%;
+        height: 4rem;
+        margin-top: 5rem;
+        border-radius: 1rem;
+    }
+
+    div#middle > div.boton-comprar > p{
+        display: flex;
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+        align-self: center;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+
+}
+
+

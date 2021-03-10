@@ -2,24 +2,44 @@
 <html lang="en">
 <head>
 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
           rel="stylesheet">
 
+
+    <script src="jq/jquery-3.5.1.min.js"></script>
+    <script src="jq/jQueryRotate.js"></script>
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
     <link rel="stylesheet" href="estilos.css">
-    <meta charset="UTF-8">
     <title>Re/Create</title>
 </head>
 <body>
+
 <div id="container">
 
     <div id="header">
 
         <nav id="menu-hamburguesa">
 
-            <input id="hamburguer-icon" type="checkbox">
 
-            <label for="hamburguer-icon">
+            <div id="container-hamburguer-icon">
 
                 <ul id="lista-icono-menu">
                     <li>
@@ -27,62 +47,62 @@
                     </li>
                 </ul>
 
-            </label>
+            </div>
 
             <nav id="menu-completo">
 
                 <ul id="menu">
                     <li id="fila-login">
-                        <icon><img src="Image/perfil-del-usuario.svg" alt=""></icon>
+                        <div><img src="Image/perfil-del-usuario.svg" alt=""></div>
                         <a href="Login.html">Login</a>/<a href="Registro.html">Register</a></li>
 
                     <li>
                         <a href="#">Graphic Tablets</a>
                         <ul>
-                            <div><a href="#">Wacom</a></div>
-                            <div><a href="#">Huion</a></div>
-                            <div><a href="#">Gaomon</a></div>
-                            <div><a href="#">X-Pen</a></div>
-                            <div><a href="#">Ugee</a></div>
+                            <li><a href="#">Wacom</a></li>
+                            <li><a href="#">Huion</a></li>
+                            <li><a href="#">Gaomon</a></li>
+                            <li><a href="#">X-Pen</a></li>
+                            <li><a href="#">Ugee</a></li>
                         </ul>
                     </li>
 
                     <li>
                         <a href="#">Colour Pencils</a>
                         <ul>
-                            <div><a href="#">Prismacolor</a></div>
-                            <div><a href="#">Faber-Castell</a></div>
-                            <div><a href="#">Caran d'Ache</a></div>
-                            <div><a href="#">Staedler</a></div>
+                            <li><a href="#">Prismacolor</a></li>
+                            <li><a href="#">Faber-Castell</a></li>
+                            <li><a href="#">Caran d'Ache</a></li>
+                            <li><a href="#">Staedler</a></li>
                         </ul>
                     </li>
 
                     <li>
                         <a href="#">Markers</a>
                         <ul>
-                            <div><a href="#">Copic Markers</a></div>
-                            <div><a href="#">Winsor & Newton</a></div>
-                            <div><a href="#">Prismacolor</a></div>
-                            <div><a href="#">Arteza</a></div>
+                            <li><a href="#">Copic Markers</a></li>
+                            <li><a href="#">Winsor & Newton</a></li>
+                            <li><a href="#">Prismacolor</a></li>
+                            <li><a href="#">Arteza</a></li>
                         </ul>
                     </li>
 
                     <li>
                         <a href="#">Oils</a>
                         <ul>
-                            <div><a href="#">Zenacolors</a></div>
-                            <div><a href="#">Winsor & Newton</a></div>
-                            <div><a href="#">Pébéo</a></div>
-                            <div><a href="#">Castle Art</a></div>
+                            <li><a href="#">Zenacolors</a></li>
+                            <li><a href="#">Winsor & Newton</a></li>
+                            <li><a href="#">Pébéo</a></li>
+                            <li><a href="#">Castle Art</a></li>
                         </ul>
                     </li>
 
                     <li>
                         <a href="#">Watercolours</a>
                         <ul>
-                            <div><a href="#">Prima Marketing</a></div>
-                            <div><a href="#">Winsor & Newton</a></div>
-                            <div><a href="#">Van Gogh</a></div>
+                            <li><a href="#">Prima Marketing</a></li>
+                            <li><a href="#">Winsor & Newton</a></li>
+                            <li><a href="#">Van Gogh</a></li>
                         </ul>
                     </li>
 
@@ -90,8 +110,25 @@
 
             </nav>
 
+            <nav id="lupa-izq">
+                <ul>
+                    <li><a href="#"><img src="Image/lupa.svg" alt=""></a></li>
+                </ul>
+            </nav>
         </nav>
 
+
+        <nav id="menu-escritorio">
+            <ul id="lista-menu-escritorio">
+
+                <li><a href="Tabletas.html">Graphic Tablets</a></li>
+                <li><a href="Lapices.html">Pencils</a></li>
+                <li><a href="Marcadores.html">Markers</a></li>
+                <li><a href="Oleos.html">Oils</a></li>
+                <li><a href="Acuarelas.html">Watercolours</a></li>
+
+            </ul>
+        </nav>
 
 
         <a id="logo" href="Re-Create.html">
@@ -103,13 +140,20 @@
         <div id="iconos-dere">
 
             <nav id="lupa">
+
+                <input id="input-lupa" type="text" placeholder="What are you looking for "/>
                 <ul>
                     <li><a href="#"><img src="Image/lupa.svg" alt=""></a></li>
                 </ul>
             </nav>
+            <nav id="usuario-dere">
+                <ul>
+                    <li><a href="Login.html"><img src="Image/user.svg" alt=""></a></li>
+                </ul>
+            </nav>
             <nav id="bolsa">
                 <ul>
-                    <li><a href="#"><img src="Image/bolsa-de-la-compra.svg"></a></li>
+                    <li><a href="Bolsa.html"><img src="Image/bolsa-de-la-compra.svg" alt=""></a></li>
                 </ul>
             </nav>
 
@@ -126,19 +170,19 @@
 
             <div class="marca-tienda">
 
-                <a href="#"><img src="Image/winsor-2.svg" alt=""></a>
+                <a href="Winsor-Acuarelas.html"><img src="Image/winsor-2.svg" alt=""></a>
 
             </div>
 
             <div class="marca-tienda">
 
-                <a href="#"><img src="Image/kisspng-prima-marketing-inc-paper-digital-marketing-5af9fdac266214.2365367515263328441572.png" alt=""></a>
+                <a href="Prima-Acuarelas.html"><img src="Image/kisspng-prima-marketing-inc-paper-digital-marketing-5af9fdac266214.2365367515263328441572.png" alt=""></a>
 
             </div>
 
             <div class="marca-tienda">
 
-                <a href="#"><img src="Image/VAN-GOGH.png" alt=""></a>
+                <a href="Van-Gogh-Acuarelas.html"><img src="Image/VAN-GOGH.png" alt=""></a>
 
             </div>
 
@@ -165,7 +209,7 @@
                 </nav>
                 <nav id="icon-insta">
                     <ul>
-                        <li><a href="#"><img src="Image/instagram.svg"></a></li>
+                        <li><a href="#"><img src="Image/instagram.svg" alt=""></a></li>
                     </ul>
                 </nav>
 
@@ -177,7 +221,7 @@
                 </nav>
                 <nav id="icon-youtube">
                     <ul>
-                        <li><a href="#"><img src="Image/youtube.svg"></a></li>
+                        <li><a href="#"><img src="Image/youtube.svg" alt=""></a></li>
                     </ul>
                 </nav>
 
@@ -185,8 +229,75 @@
 
         </div>
 
+        <div id="email-updates-tablet">
+
+            <h3>SING UP FOR EMAIL UPDATES</h3>
+
+            <p>Sign up to our mailing list and get tips and techniques, new product releases and more</p>
+
+            <div id="boton-singup-tablet"><a href="Registro.html">SING UP</a></div>
+
+
+        </div>
+
+        <div id="follow-us-tablet">
+
+            <h3>FOLLOW US ON SOCIAL</h3>
+
+            <p>Find us on Facebook, Instagram, Pinterest and Youtube</p>
+
+            <div id="redes-tablet">
+
+                <nav id="icon-face-tablet">
+                    <ul>
+                        <li><a href="#"><img src="Image/logo-de-facebook.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+                <nav id="icon-insta-tablet">
+                    <ul>
+                        <li><a href="#"><img src="Image/instagram.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+
+                <nav id="icon-pinterest-tablet">
+                    <ul>
+                        <li><a href="#"><img src="Image/logotipo-de-la-letra-de-pinterest-dentro-de-un-circulo.svg"
+                                             alt=""></a></li>
+                    </ul>
+                </nav>
+                <nav id="icon-youtube-tablet">
+                    <ul>
+                        <li><a href="#"><img src="Image/youtube.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="customer-service-tablet">
+
+            <h3>CUSTOMER SERVICE</h3>
+
+            <p>Contact us</p>
+            <p>Sitemap</p>
+
+        </div>
+
+        <div id="legal-tablet">
+
+            <h3>LEGAL</h3>
+
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Coockie Policy</p>
+
+        </div>
+
 
     </div>
+
+</div>
 
 </div>
 </body>
